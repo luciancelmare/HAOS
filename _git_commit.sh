@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd /root/config
 #automatic add all files
 git add .
