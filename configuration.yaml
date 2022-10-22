@@ -10,6 +10,11 @@ script: !include scripts.yaml
 scene: !include scenes.yaml
 sensor: !include sensors.yaml
 
+logger:
+  default: info
+  logs:
+    homeassistant.components.shell_command: debug
+
 #DB DETAILS (MARIA DB) - for all HA configuration
 recorder:
   purge_keep_days: 90
