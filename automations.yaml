@@ -1,1 +1,13 @@
-[]
+- id: "1666461620917"
+  alias: github_autocommit
+  description: ""
+  trigger:
+    - platform: time_pattern
+      hours: "*"
+      minutes: "*"
+      seconds: "0"
+  condition: []
+  action:
+    - service: shell_command.gitupdate
+      data: {}
+  mode: single

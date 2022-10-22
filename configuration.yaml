@@ -33,3 +33,6 @@ recorder:
     #- climate
     #- vacuum
     #- sensor
+
+shell_command:
+  gitupdate: "/bin/sh /root/config/_git_commit.sh"
