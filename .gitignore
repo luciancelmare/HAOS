@@ -5,6 +5,8 @@
 !*.ms
 !automations/**
 
+
+
 # #ignore folders
 .storage
 .cloud
@@ -13,3 +15,4 @@
 # #Custom files
 ip_bans.yaml
 secrets.yaml
+home-assistant.log
