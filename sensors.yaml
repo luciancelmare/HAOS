@@ -1,8 +1,0 @@
-
-
-#GITHub Integration
-# - platform: github
-#   access_token: !secret github_token
-#   repositories:
-#     - path: "luciancelmare/HAOS"
-#       name: "HAOS GitBub"
