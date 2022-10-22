@@ -1,0 +1,34 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+sensor: !include sensors.yaml
+
+recorder:
+  purge_keep_days: 90
+  db_url: mysql://ha:adm123@core-mariadb/homeassistant?charset=utf8mb4
+  exclude:
+    domains:
+      - automation
+      - updater
+    entity_globs:
+      - sensor.weather_*
+    entities:
+      - sun.sun # Don't record sun data
+      - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+      - sensor.date
+    #event_types:
+    #- call_service # Don't record service calls
+    #- scene
+    #- fan
+    #- alarm_control_panel
+    #- media_player
+    #- climate
+    #- vacuum
+    #- sensor

@@ -1,0 +1,15 @@
+# *
+!*/
+!*.yaml
+!.gitignore
+!*.ms
+!automations/**
+
+# #ignore folders
+.storage
+.cloud
+.ssh
+
+# #Custom files
+ip_bans.yaml
+secrets.yaml
